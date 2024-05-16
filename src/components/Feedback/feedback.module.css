@@ -1,9 +1,11 @@
-.buttonV {
-    width: 100px;
-    align-items: center;
-    justify-content: space-around;
+.buttonDecor {
+    width: 120px;
+    height: 30px;
+    font-size:medium;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    background-color: rgba(128, 128, 239, 0.447);
     border-radius: 100px;
     border: 1px;
-    box-shadow: inset -1px 3px 5px 0px rgba(0, 0, 0, 0.75);
-    background-color: rgba(128, 128, 239, 0.447);
+    text-align: center;
 }
+

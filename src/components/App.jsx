@@ -1,7 +1,8 @@
 import { Feedback } from "./Feedback/Feedback";
-import { Statistics } from "./Statistics";
+import { Statistics } from "./Statistics/Statistics";
 import React, { useState } from 'react';
 import './App.css'
+import './Feedback/feedback.module.css'
 
 
 export const App = () => {
@@ -32,8 +33,8 @@ export const App = () => {
   
   return (
     <>
-    <Feedback  good={good} value={value} result={result} onClickGood={onClickGood} onClicNeutral={onClicNeutral} onClicBad={onClicBad} totalClick={countTotalFeedback} />
-    <Statistics good={good} neutral={neutral} bad={bad} value={value} result={result} />
+      <Feedback good={good} value={value} result={result} onClickGood={onClickGood} onClicNeutral={onClicNeutral} onClicBad={onClicBad} totalClick={countTotalFeedback} />
+      <Statistics good={good} neutral={neutral} bad={bad} value={value} result={result} />
     </>
   );
 };

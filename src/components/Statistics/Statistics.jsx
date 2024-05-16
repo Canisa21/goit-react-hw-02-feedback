@@ -1,4 +1,6 @@
-export const Statistics=({ good, neutral, bad, value, result})=>{
+import css from './statistics.module.css'
+
+export const Statistics = ({ good, neutral, bad, value, result }) => {
     result = 0;
 
     if (good !== 0) {
@@ -8,6 +10,7 @@ export const Statistics=({ good, neutral, bad, value, result})=>{
 
     if (value === 0) {
         return (
+            
             <div>
                 There is no feedback
             </div>
@@ -16,6 +19,7 @@ export const Statistics=({ good, neutral, bad, value, result})=>{
     else {
         return (
             <div>
+                <p className={css.statsDecor}>Statistics</p>
                 <p>Good: {good}</p>
                 <p>Neutral: {neutral}</p>
                 <p>Bad:{bad}</p>
